@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Bootstrap shadows</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style id="compiled-css" type="text/css">
+    /*
+*
+* ==========================================
+* CUSTOM UTILS CLASSES
+* ==========================================
+*
+*/
+
+
+/* EFFECT 1 ========================================== */
+
+.effect-1 {
+    position: relative;
+}
+.effect-1::before, .effect-1::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #aaa;
+    box-shadow: 0 15px 10px #aaa;
+    transform: rotate(-3deg);
+}
+.effect-1::after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+
+/* EFFECT 2 ========================================== */
+.effect-2::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    bottom: 5px;
+    left: 30px;
+    right: 30px;
+    top: 80%;
+    background: #aaa;
+    box-shadow: 0 0 25px 17px #aaa;
+    border-radius: 100px/10px;
+}
+
+
+/* EFFECT 3 ========================================== */
+.effect-3 {
+    position: relative;
+}
+
+.effect-3::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #aaa;
+    box-shadow: 0 15px 10px #aaa;
+    transform: rotate(-3deg);
+}
+
+
+/* EFFECT 4 ========================================== */
+.effect-4 {
+    position: relative;
+}
+
+.effect-4::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    right: 10px;
+    left: auto;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #aaa;
+    box-shadow: 0 15px 10px #aaa;
+    transform: rotate(3deg);
+}
+
+
+/* EFFECT 5 ========================================== */
+.effect-5::before{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	bottom: 20px;
+	left: 8px;
+	right: 8px;
+	top: 20px;
+	background: #aaa;
+	box-shadow: 0 0 25px 10px #aaa;
+	border-radius: 10px/40px;
+}
+.effect-5::after{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	bottom: 14px;
+	left: 30px;
+	right: 30px;
+	top: 14px;
+	background: #aaa;
+	box-shadow: 0 0 25px 17px #aaa;
+	border-radius: 100px/10px;
+}
+
+/* EFFECT 6 ========================================== */
+.effect-6 {
+    position: relative;
+}
+
+.effect-6::before {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: 26px;
+	left: 12px;
+	bottom: 50px;
+	width: 20%;
+	transform: rotate(-10deg);
+	box-shadow: 0 10px 25px 10px #aaa;
+}
+
+.effect-6::after {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: 26px;
+	right: 10px;
+	bottom: 50px;
+	width: 20%;
+	transform: rotate(8deg);
+	box-shadow: 0 10px 25px 10px #aaa;
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+section {
+    position: relative;
+    z-index: 99;
+}
+
+.card {
+    margin-bottom: 2.5rem;
+    border: none;
+}
+
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <!-- Demo header-->
+<section class="pb-5 header text-center">
+    <div class="container py-5">
+        <header class="pb-4">
+            <h1 class="display-4">Bootstrap shadow effects</h1>
+            <p class="font-italic text-muted mb-1">Some elegant CSS drop shadow effects that&apos;ll save your day.</p>
+            <p class="font-italic text-muted">Snippet by
+                <a class="text-muted" href="https://bootstrapious.com/">
+                    <u>Bootstrapious</u>
+                </a>
+            </p>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <!-- Default small shadow-->
+                <div class="card shadow-sm">
+                    <div class="card-body p-5">
+                        <h2 class="h5"><code>.shadow-sm</code> utility class</h2>
+                        <p class="font-italic text-muted">Boostrap standard small shadow</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Default large shadow-->
+                <div class="card shadow-lg">
+                    <div class="card-body p-5">
+                        <h2 class="h5"><code>.shadow-lg</code> utility class</h2>
+                        <p class="font-italic text-muted">Boostrap standard large shadow</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Default large shadow-->
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <h2 class="h5"><code>.shadow</code> utility class</h2>
+                        <p class="font-italic text-muted">Boostrap standard regular shadow</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Effect 1-->
+                <div class="card effect-1">
+                    <div class="card-body p-5">
+                        <h2 class="h5">Custom effect 1</h2>
+                        <p class="font-italic text-muted">Using pseudo elements <code>::before</code> &amp; <code>::after</code> to add shadow on both sides, rotate them to give the desired effect.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Effect 2-->
+                <div class="card effect-2">
+                    <div class="card-body p-5">
+                        <h2 class="h5">Custom effect 2</h2>
+                        <p class="font-italic text-muted">Placing pseudo element <code>::before</code> at the bottom with negative z-index and border radius to give curved shadow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Effect 3-->
+                <div class="card effect-3">
+                    <div class="card-body p-5">
+                        <h2 class="h5">Custom effect 3</h2>
+                        <p class="font-italic text-muted">Using pseudo element <code>::before</code> to add shadow on left side, rotate it to give the desired effect.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Effect 4-->
+                <div class="card effect-4">
+                    <div class="card-body p-5">
+                        <h2 class="h5">Custom effect 4</h2>
+                        <p class="font-italic text-muted">Using pseudo element <code>::before</code> to add shadow on right side, rotate it to give the desired effect.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Effect 5-->
+                <div class="card effect-5">
+                    <div class="card-body p-5">
+                        <h2 class="h5">Custom effect 5</h2>
+                        <p class="font-italic text-muted">Placing pseudo element <code>::before</code> behind the origin block, give it drop shadow respect to the four edges of the original block and you will get the desired result.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Effect 6-->
+                <div class="card effect-6">
+                    <div class="card-body p-5">
+                        <h2 class="h5">Custom effect 6</h2>
+                        <p class="font-italic text-muted">Two boxes with negative z-index are added near the left and right edges of the block respectively using the two pseudo elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script type="text/javascript">
+
+  </script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "yq9c8wb3"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>

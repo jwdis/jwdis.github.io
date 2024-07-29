@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Bootstrap toggle switch</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style id="compiled-css" type="text/css">
+    /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+/* toggle switches with bootstrap default colors */
+.custom-control-input-success:checked ~ .custom-control-label::before {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+.custom-control-input-danger:checked ~ .custom-control-label::before {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.custom-control-input-warning:checked ~ .custom-control-label::before {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.custom-control-input-info:checked ~ .custom-control-label::before {
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+}
+
+/* Large toggl switches */
+.custom-switch-lg .custom-control-label::before {
+    left: -2.25rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+
+.custom-switch-lg .custom-control-label::after {
+    top: calc(.25rem + 3px);
+    left: calc(-2.25rem + 4px);
+    width: calc(1.5rem - 6px);
+    height: calc(1.5rem - 6px);
+    border-radius: 1.5rem;
+}
+
+.custom-switch-lg .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(1.4rem);
+}
+
+.custom-switch-lg .custom-control-label::before {
+    height: 1.5rem;
+}
+
+.custom-switch-lg .custom-control-label {
+    padding-left: 1.5rem;
+    line-height: 1.7rem;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+body {
+    min-height: 100vh;
+    background: #121618;
+}
+
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <!-- Demo header-->
+<section class="py-5 header text-center text-white">
+    <div class="container py-4">
+        <header>
+            <h1 class="display-4">Bootstrap toggle switch</h1>
+            <p class="font-italic mb-1">Create bootstrap toggle switches using Bootstrap custom form components.</p>
+            <p class="font-italic">Snippet by
+                <a class="text-white" href="https://bootstrapious.com/">
+                    <u>Bootstrapious</u>
+                </a>
+            </p>
+        </header>
+    </div>
+</section>
+
+
+<section class="pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Default switches with radio inputs-->
+                <p class="font-italic text-muted">Standard checkbox switches - with bootstrap theme colors.</p>
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch">
+                                    <input class="custom-control-input" id="customSwitch1" type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch1">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch m-0">
+                                    <input class="custom-control-input" id="customSwitch2" type="checkbox">
+                                    <label class="custom-control-label font-italic" for="customSwitch2">Feature two</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="customSwitch3" type="checkbox">
+                                    <label class="custom-control-label font-italic" for="customSwitch3">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch m-0">
+                                    <input class="custom-control-input custom-control-input-success" id="customSwitch4" type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch4">Feature two</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-warning" id="customSwitch5" type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch5">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch m-0">
+                                    <input class="custom-control-input custom-control-input-warning" id="customSwitch6" type="checkbox">
+                                    <label class="custom-control-label font-italic" for="customSwitch6">Feature two</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- large switches with checkbox inputs-->
+                <p class="font-italic text-muted">Larger checkbox switches</p>
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch custom-switch-lg">
+                                    <input class="custom-control-input" id="customSwitch7" type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch7">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch custom-switch-lg m-0">
+                                    <input class="custom-control-input" id="customSwitch8" type="checkbox">
+                                    <label class="custom-control-label font-italic" for="customSwitch8">Feature one</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch custom-switch-lg">
+                                    <input class="custom-control-input custom-control-input-success" id="customSwitch9" type="checkbox">
+                                    <label class="custom-control-label font-italic" for="customSwitch9">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch custom-switch-lg m-0">
+                                    <input class="custom-control-input custom-control-input-success" id="customSwitch10" type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch10">Feature one</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch custom-switch-lg">
+                                    <input class="custom-control-input custom-control-input-warning" id="customSwitch11" type="checkbox">
+                                    <label class="custom-control-label font-italic" for="customSwitch11">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch custom-switch-lg m-0">
+                                    <input class="custom-control-input custom-control-input-danger" id="customSwitch12" type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch12">Feature one</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                 <!-- Default switches with radio inputs-->
+                <p class="font-italic text-muted">Standard radio switches.</p>
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch">
+                                    <input class="custom-control-input" id="customSwitch13" type="radio" , name="switchradio-1" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch13">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch m-0">
+                                    <input class="custom-control-input" id="customSwitch14" type="radio" , name="switchradio-1">
+                                    <label class="custom-control-label font-italic" for="customSwitch14">Feature two</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="customSwitch15" type="radio" , name="switchradio-2">
+                                    <label class="custom-control-label font-italic" for="customSwitch15">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch m-0">
+                                    <input class="custom-control-input custom-control-input-success" id="customSwitch16" type="radio" , name="switchradio-2" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch16">Feature two</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0 shadow mb-4">
+                            <div class="card-body p-4 text-center">
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-warning" id="customSwitch17" type="radio" , name="switchradio-3" checked>
+                                    <label class="custom-control-label font-italic" for="customSwitch17">Feature one</label>
+                                </p>
+
+                                <!-- Custom switch -->
+                                <p class="custom-control custom-switch m-0">
+                                    <input class="custom-control-input custom-control-input-warning" id="customSwitch18" type="radio" , name="switchradio-3">
+                                    <label class="custom-control-label font-italic" for="customSwitch18">Feature two</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script type="text/javascript">
+
+  </script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "0Ld1py7u"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>

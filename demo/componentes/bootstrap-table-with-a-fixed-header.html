@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Bootstrap table fixed header</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style id="compiled-css" type="text/css">
+    /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed tbody th,
+.table-fixed thead > tr > th {
+    float: left;
+    position: relative;
+
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+    background: #74ebd5;
+    background: -webkit-linear-gradient(to right, #74ebd5, #ACB6E5);
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+
+}
+
+
+
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <!-- For demo purpose -->
+<div class="container text-center text-white">
+    <div class="row pt-5">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Bootstrap table fixed header</h1>
+            <p class="lead mb-0">Build a bootstrap table with a fixed header and scrollable body using Bootstrap 4.</p>
+            <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class="text-white">
+                <u>Bootstrapious</u></a></p>
+            </div>
+        </div>
+    </div><!-- End -->
+
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-7 mx-auto bg-white rounded shadow">
+
+                <!-- Fixed header table-->
+                <div class="table-responsive">
+                    <table class="table table-fixed">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="col-3">#</th>
+                                <th scope="col" class="col-3">First</th>
+                                <th scope="col" class="col-3">Last</th>
+                                <th scope="col" class="col-3">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="col-3">1</th>
+                                <td class="col-3">Mark</td>
+                                <td class="col-3">Otto</td>
+                                <td class="col-3">@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">2</th>
+                                <td class="col-3">Jacob</td>
+                                <td class="col-3">Thornton</td>
+                                <td class="col-3">@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">3</th>
+                                <td colspan="2" class="col-6">Larry the Bird</td>
+                                <td class="col-3">@twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">4</th>
+                                <td class="col-3">Martin</td>
+                                <td class="col-3">Williams</td>
+                                <td class="col-3">@Marty</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">5</th>
+                                <td colspan="2" class="col-3">Sam</td>
+                                <td colspan="2" class="col-3">Pascal</td>
+                                <td class="col-3">@sam</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">6</th>
+                                <td class="col-3">John</td>
+                                <td class="col-3">Green</td>
+                                <td class="col-3">@john</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">7</th>
+                                <td colspan="2" class="col-3">David</td>
+                                <td colspan="2" class="col-3">Bowie</td>
+                                <td class="col-3">@david</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">8</th>
+                                <td class="col-3">Pedro</td>
+                                <td class="col-3">Rodriguez</td>
+                                <td class="col-3">@rod</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">5</th>
+                                <td colspan="2" class="col-3">Sam</td>
+                                <td colspan="2" class="col-3">Pascal</td>
+                                <td class="col-3">@sam</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">10</th>
+                                <td class="col-3">Jacob</td>
+                                <td class="col-3">Thornton</td>
+                                <td class="col-3">@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">11</th>
+                                <td colspan="2" class="col-6">Larry the Bird</td>
+                                <td class="col-3">@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- End -->
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+  </script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "dmp7tr4g"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>

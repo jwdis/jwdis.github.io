@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Bootstrap checkbox list</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style id="compiled-css" type="text/css">
+    /*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+body {
+    background: linear-gradient(to left, #56ab2f, #a8e063);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <!-- Demo header-->
+<section class="py-5 header text-center text-white">
+    <div class="container pt-4">
+        <header>
+            <h1 class="display-4">Bootstrap checkbox list</h1>
+            <p class="font-italic mb-1">Using Bootstrap 4 custom checkboxes, build an elegant food form.</p>
+            <p class="font-italic"> Snippet By
+                <a class="text- text-white" href="https://bootstrapious.com/">
+                    <u>Bootstrapious</u>
+                </a>
+            </p>
+        </header>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1">Choose from our pizzas</h2>
+                        <p class="small text-muted font-italic mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck1" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck1">Margherita</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck2" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck2">Pepperoni</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck3" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck3">Prosciutto</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck4" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck4">Neapolitano</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck5" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck5">Tarantella</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1">Pick a drink</h2>
+                        <p class="small text-muted font-italic mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <ul class="list-group list-group-horizontal-xl mx-auto">
+                            <li class="list-group-item rounded-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck6" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck6">Martini</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck7" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck7">Cappuccino</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck8" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck8">Latte</label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" id="customCheck9" type="checkbox">
+                                    <label class="cursor-pointer font-italic d-block custom-control-label" for="customCheck9">Mojito</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="h4 mb-1">Choose your main dish</h2>
+                        <p class="small text-muted font-italic mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item rounded-0 d-flex align-items-center justify-content-between">
+                                <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="customRadio1" type="radio" name="customRadio">
+                                    <label class="custom-control-label" for="customRadio1">
+                                        <p class="mb-0">Insalata de riso</p><span class="small font-italic text-muted">Classic marinara sauce, authentic old-world pepperoni</span>
+                                    </label>
+                                </div>
+                                <label for="customRadio1"><img src="https://i.postimg.cc/Hsq4Ygss/1-ezgo0i.png" alt width="60"></label>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="customRadio2" type="radio" name="customRadio">
+                                    <label class="custom-control-label" for="customRadio2">
+                                        <p class="mb-0">Insalata ai cipollotti</p><span class="small font-italic text-muted">Classic marinara sauce, authentic old-world pepperoni</span>
+                                    </label>
+                                </div>
+                                <label for="customRadio2"><img src="https://i.postimg.cc/zf5ChFgs/2-rqo4zs.gif" alt width="60"></label>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center justify-content-between">
+                                <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="customRadio3" type="radio" name="customRadio">
+                                    <label class="custom-control-label" for="customRadio3">
+                                        <p class="mb-0">Insalata caprese</p><span class="small font-italic text-muted">Classic marinara sauce, authentic old-world pepperoni</span>
+                                    </label>
+                                </div>
+                                <label for="customRadio3"><img src="https://i.postimg.cc/Jnzj67KK/4-t444fl.png" alt width="60"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script type="text/javascript">
+
+  </script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "ur4503xe"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>

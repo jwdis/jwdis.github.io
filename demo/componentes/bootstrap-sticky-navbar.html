@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Bootstrap sticky navbar</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style id="compiled-css" type="text/css">
+    /*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+.header {
+    background-color: #00d2ff;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 100%);
+}
+
+.section-1 {
+    background: #f5f5f5;
+}
+
+.section-2 {
+    background: #F1F1F1;
+}
+
+.section-3 {
+    background: #EAEAEA;
+}
+
+.section-4 {
+    background: #E5E5E5;
+}
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <!-- Demo header-->
+<section class="py-5 header text-center">
+    <div class="container py-5 text-white">
+        <header class="py-5">
+            <h1 class="display-4">Bootstrap sticky navbar</h1>
+            <p class="font-italic mb-1">Create a sticky top navbar using Bootstrap 4 utility classes.</p>
+            <p class="font-italic">Snippet by
+                <a class="text-white" href="https://bootstrapious.com/">
+                    <u>Bootstrapious</u>
+                </a>
+            </p>
+        </header>
+    </div>
+</section>
+
+
+<!-- Sticky navbar-->
+<header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+        <div class="container"><a class="navbar-brand" href="#">
+            <strong class="h6 mb-0 font-weight-bold text-uppercase">Sticky navbar</strong></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Demo content-->
+<section class="py-5 section-1">
+    <div class="container py-5 text-center">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Demo section 1</h2>
+                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 section-2">
+    <div class="container py-5 text-center">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Demo section 2</h2>
+                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 section-3">
+    <div class="container py-5 text-center">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Demo section 3</h2>
+                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 section-4">
+    <div class="container py-5 text-center">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Demo section 4</h2>
+                <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script type="text/javascript">
+
+  </script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "ekv4a6oq"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>

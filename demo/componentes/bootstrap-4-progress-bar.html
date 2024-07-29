@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Bootstrap Progress Bar</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style id="compiled-css" type="text/css">
+    /*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    min-height: 100vh;
+    background-color: #00d2ff;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 100%);
+}
+
+.bg-gradient {
+    background-color: #00d2ff;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 100%);
+    box-shadow: 2px 2px 10px rgba(57, 123, 213, 0.36)
+}
+
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <div class="container py-5">
+    <header class="text-center text-white">
+        <h1 class="display-4">Bootstrap 4 progress bar</h1>
+        <p class="lead mb-0">Some Bootstrap 4 progress bar variants.</p>
+        <p class="font-italic">Snippet By
+            <a href="https://bootstrapious.com" class="text-white">
+                <u>Bootstrapious</u>
+            </a>
+        </p>
+    </header>
+
+    <div class="row py-5">
+        <div class="col-lg-8 mx-auto">
+
+            <div class="card shadow mb-4">
+                <div class="card-body p-5">
+                    <h4>Regular progress bar</h4>
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    
+                    <!-- Regular progress bar-->
+                    <div style="height: 4px" class="progress">
+                        <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%" class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-body p-5">
+                    <h4>Multiple progress bars</h4>
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    
+                    <!-- Multiple progress bar-->
+                    <div style="height: 4px" class="progress rounded-pill">
+                        <div role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%" class="progress-bar"></div>
+                        <div role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%" class="progress-bar bg-warning"></div>
+                        <div role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%" class="progress-bar bg-danger"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-body p-5">
+                    <h4>Striped progress bar</h4>
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    
+                    <!-- Striped progress bars-->
+                    <div style="height: 8px" class="progress rounded-pill">
+                        <div role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%" class="progress-bar progress-bar-striped rounded-pill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-body p-5">
+                    <h4>Animated progress bar</h4>
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    
+                    <!-- Animated progress bars-->
+                    <div style="height: 8px" class="progress rounded-pill">
+                        <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" class="progress-bar progress-bar-striped progress-bar-animated rounded-pill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-body p-5">
+                    <h4>Labeled progress ba</h4>
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    
+                    <!-- Labeled progress bar-->
+                    <div class="progress rounded-pill">
+                        <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%" class="progress-bar rounded-pill">55%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-body p-5">
+                    <h4>Custom styled progress bar</h4>
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    
+                    <!-- Custom styled progress bar-->
+                    <div style="height: 12px" class="progress rounded-pill">
+                        <div role="progressbar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100" style="width: 44%" class="progress-bar rounded-pill bg-gradient"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+
+  </script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "hobmg0vy"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>
