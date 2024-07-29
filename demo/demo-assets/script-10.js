@@ -158,3 +158,27 @@ function ChangeUrl(page, url) {
     // alert("Browser does not support HTML5.");
   }
 }
+
+
+let botaoProximo = document.querySelector('#proximo');
+let botaoAnterior = document.querySelector('#anterior');
+
+botaoProximo.addEventListener('click', function (event) {
+  var idx = pageView.selectedIndex;
+  var options = pageView.options;
+  console.log("Idx: "+idx+"; IndexOptions: " + options[idx].index + " is " + options[idx].text + '; total: '+options.length);
+  if(idx<options.length-1){
+    pageView.selectedIndex = (idx+1);
+    pageView.dispatchEvent(new Event('change'));
+  }
+});
+
+botaoAnterior.addEventListener('click', function (event) {
+  var idx = pageView.selectedIndex;
+  var options = pageView.options;
+  console.log("Idx: "+idx+"; IndexOptions: " + options[idx].index + " is " + options[idx].text + '; total: '+options.length);
+  if(idx>0){
+    pageView.selectedIndex = (idx-1);
+    pageView.dispatchEvent(new Event('change'));
+  }
+});

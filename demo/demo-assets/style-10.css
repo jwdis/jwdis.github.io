@@ -268,3 +268,16 @@ select,button {
 .rounded {
   border-radius: .35rem;
 }
+
+#proximoAnterior{
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  select#pageView {
+    max-width: 10px;
+  }
+  #proximoAnterior{
+    display: inline-flex;
+  }
+}
