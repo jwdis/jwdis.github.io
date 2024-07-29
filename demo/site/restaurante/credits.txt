@@ -1,0 +1,33 @@
+------------------------------------------
+ PLUGINS CREDITS
+------------------------------------------
+
+    - Bootstrap 5    -    https://getbootstrap.com
+
+    - Font Awesome   -    https://fontawesome.com
+
+    - Swiper         -    https://swiperjs.com/
+
+    - gLightbox      -    https://biati-digital.github.io/glightbox/
+
+    - Leaflet        -    https://leafletjs.com/
+
+    - Air Datepicker -    https://air-datepicker.com/
+
+
+------------------------------------------
+ IMAGES CREDITS
+------------------------------------------
+
+    -  https://www.pexels.com/photo/bread-food-wood-coffee-86753/
+    -  https://www.pexels.com/photo/salad-pomegranate-chicken-spinach-5916/
+    -  https://www.pexels.com/photo/food-dish-food-photography-tuna-110814/
+    -  https://www.pexels.com/photo/food-dinner-lemon-rice-8758/
+    -  https://www.pexels.com/photo/spinach-and-beetroot-salad-5928/
+    -  https://www.pexels.com/photo/lunch-5944/
+    -  https://www.pexels.com/photo/lunch-table-salad-5876/
+    -  http://www.pngall.com/food-png
+    -  http://www.pngpix.com/?s=food
+    -  https://www.pexels.com/photo/food-cook-oven-11415/
+    -  https://www.pexels.com/photo/pasta-dish-on-white-plate-26646/
+    -  https://www.pexels.com/photo/food-coffee-lunch-burrito-6500/
