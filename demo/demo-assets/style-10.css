@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #24c302;
+  /* --primary-color: #24c302; */
+  --primary-color: rgb(151 3 253);
 }
 
 body {
@@ -210,7 +211,7 @@ body {
 .btn-primary {
   border-radius: 5px;
   border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  color: white;
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -267,6 +268,11 @@ select,button {
 }
 .rounded {
   border-radius: .35rem;
+}
+
+.btn-primary, .btn-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 3 253 / var(--tw-bg-opacity));
 }
 
 #proximoAnterior{
