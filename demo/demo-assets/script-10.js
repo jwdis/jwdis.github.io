@@ -12,29 +12,6 @@ var demoLinkValue = urlParams.get('demoLink');
 let iframeView = document.getElementById("demoLink");
 iframeView.src = demoLinkValue;
 document.getElementById("title").innerHTML = theme;
-// let ghtButton = document.querySelector(".ght-download");
-// let tfButton = document.querySelector(".tf-download");
-// if (ghtButton) {
-//   ghtButton.href = `https://gethugothemes.com/products/${theme}/?utm_source=demo_banner&utm_medium=referral&utm_campaign=demo_banner_download_btn`;
-// }
-// if (tfButton) {
-//   tfButton.href = `https://themefisher.com/products/${theme}-hugo/?utm_source=demo_banner&utm_medium=referral&utm_campaign=demo_banner_download_btn`;
-// }
-// preloader
-// setTimeout(function () {
-//   document.querySelector(".demo-loader").classList.add("fadeOut");
-// }, 4000);
-
-// // logo wrapper
-// var logoWrapper = document.querySelector(".logo-wrapper");
-// logoWrapper.innerHTML = `
-// <div class="site-logo gethugothemes">
-//   <a href="https://gethugothemes.com/"><img src="../icons/ght-logo.png" width="150" alt="gethugothemes logo"></a>
-// </div>
-// <div class="site-logo themefisher">
-//   <a href="https://themefisher.com/"><img src="../icons/tf-logo.png" width="170" style="padding: 5px 0;" alt="themefisher logo"></a>
-// </div>
-// `;
 
 // demo switcher
 var demoSwitcher = document.querySelector(".demo-switch");
@@ -146,11 +123,14 @@ pageView.addEventListener('change', function (event) {
   ChangeUrl(pageView.value, new_url);
 });
 
+if(!demoLinkValue){
+  pageView.selectedIndex = 0;
+  pageView.dispatchEvent(new Event('change'));
+}
 
 
 function ChangeUrl(page, url) {
   if (typeof (history.pushState) != "undefined") {
-  
     var obj = {Page: page, Url: url};
     history.pushState(obj, obj.Page, obj.Url);
   } else {

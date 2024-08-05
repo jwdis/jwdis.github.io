@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
             slideSplitRatio: .65
         },
         centeredSlides: true,
-        grabCursor: !0,
-        slidesPerView: 2,
+        grabCursor: true,
+        slidesPerView: 4,
         spaceBetween: 16,
         speed: 600,
         loop: true,
