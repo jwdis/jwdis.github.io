@@ -1,0 +1,6 @@
+**/src/
+**/teste/
+**/node_modules/
+**/pug_node_modules/
+**/dist/
+**/node_modules.lnk
